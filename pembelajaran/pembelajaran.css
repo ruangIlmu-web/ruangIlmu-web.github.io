@@ -110,13 +110,14 @@ transform: scaleX(-1);
 
 .fitur-materi .semua-materi .materi {
     border: 2px solid var(--purple);
+    box-shadow: 0px 4px 77px 17px rgba(108, 82, 207, 0.19);
     height: 48rem;
     width: 30rem;
     flex-grow: 1;
-    border-radius: 3rem;
+    border-radius: 2rem;
     margin-top: 8px;
     padding-top: 20px;
-}
+} 
 
 .materi img {
     display: flex;
@@ -516,7 +517,7 @@ footer{
 
     /* fitur */
     .fitur-materi{
-        margin: -4rem 1rem -50rem 2rem;
+        margin: -4rem 1rem -50rem 1rem;
     }
     
     .fitur-materi h1 {
