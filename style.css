@@ -1,0 +1,981 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --midnight: #2C369B;
+    --purple: #6C52CF;
+    --cream: #F7F5F2;
+}
+
+*{
+    font-family: "Afacad", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection{
+    color: white;
+}
+
+html {
+    font-size: 62.5%; /* 16px * 62.5% = 10px */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: var(--cream);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+
+/* header starts */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58px;
+    background: var(--midnight);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+}
+
+header .navbar{
+    top: 0;
+}
+
+header .navbar a{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    color: white;
+    padding: 0.5rem 1.8rem;
+    border-radius: 0.7rem;
+}
+
+header .navbar a:hover {
+    color: var(--midnight);
+    background-color: white;
+    transition-duration: 0.6s;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.image {
+    display: flex;
+}
+.image img{
+    width: 35%;
+}
+
+.image img:nth-child(2){
+margin-left: auto;
+transform: scaleX(-1);
+
+}
+
+.content {
+    width: 70%;
+    margin: -300px auto 0 auto;
+    justify-content: center;
+}
+
+.content .content-home {
+    display: flex;
+    justify-content: space-between;
+}
+.content .content-home img{
+    width: 423px;
+    margin-top: -80px;
+}
+
+.content-home h1, .learning-text h1 {
+    max-width: 450px;
+    font-size: 3.8rem;
+}
+
+.content-home .home-text, .learning-text {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-home .home-text a {
+    font-size: 3.3rem; 
+    background-color: var(--purple); 
+    color: white; 
+    font-weight: 500; 
+    margin-top: 20px; 
+    padding: 14px 58px; 
+    border-radius: 42px; 
+    cursor: pointer; 
+    width: 27.5rem;
+}
+
+.content-home .home-text a:hover, .learning-text a:hover {
+    background-color: transparent;
+    color: var(--purple);
+    border: 1px solid var(--midnight);
+    transition: 0.9s;
+}
+
+/* about starts*/
+
+.content-about {
+    margin-top: 20rem;
+}
+.about-text {
+    /* margin-top: -77rem; */
+    margin: -27rem 20%;
+    text-align: center;
+    max-width: 90rem;
+}
+
+.about-text h1, p{
+    color: white;
+}
+
+.about-text h1 {
+    font-size: 5.5rem;
+}
+
+.about-text p {
+    color: black;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-top: 16rem;
+}
+/* about ends */
+
+/* fitur starts */
+.content-fitur{
+    margin: 35rem 10%;
+}
+
+.content-fitur .header-fitur{
+    color: var(--purple);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.content-fitur .fitur-section{
+    display: flex;
+    gap: 2rem;
+}
+
+.content-fitur .fitur-text {
+    margin-top: 3rem;
+}
+
+.content-fitur .fitur-text .fitur{
+    border: 2px solid var(--purple);
+    border-radius: 3rem;
+    margin-top: 8px;
+    flex-grow: 1;
+    padding: 0.1rem 2rem 0.4rem 4rem;
+}
+.content-fitur .fitur-section .fitur-text h1{
+    color: var(--midnight);
+    font-size: 3.3rem;
+}
+
+.content-fitur .fitur-section .fitur-text p{
+    color: black;
+    font-size: 2rem;
+}
+
+.content-fitur .fitur-section img {
+    width: 450px;
+}
+/* fitur ends */
+
+/* materi starts */
+.fitur-materi{
+    margin: -25rem 15%;
+}
+
+.fitur-materi h1 {
+    color: var(--purple);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.fitur-materi .semua-materi{
+    display: flex;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.fitur-materi .semua-materi .materi {
+    border: 2px solid var(--purple);
+    height: 300px;
+    border-radius: 3rem;
+    margin-top: 8px;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.materi img {
+    display: flex;
+    margin: auto;
+    width: 250px;
+    /* padding: 20px; */
+    border: 1px solid var(--purple);
+    border-radius: 18px;
+}
+
+.materi h2 {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 214px;
+    margin: auto;
+    color: var(--purple);
+    padding-top: 0.7rem;
+}
+/* materi ends */
+
+.fitur-learning {
+    display: flex;
+    margin-top: 40rem;
+    margin: 40rem 14% 10rem 14%;
+    gap: 3rem;
+}
+
+.learning-text{
+    margin-top: 4rem;
+    gap: 2.3rem;
+}
+
+.learning-p p{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--purple);
+}
+
+.learning-text a {
+    font-size: 3rem; 
+    background-color: var(--purple); 
+    color: white; 
+    font-weight: 500; 
+    margin-top: 4.6rem; 
+    padding: 14px; 
+    border-radius: 42px; 
+    cursor: pointer; 
+    width: 28rem;
+    text-align: center;
+}
+
+.fitur-learning img{
+    width: 43%;
+    margin-top: -8rem;
+}
+/* main ends */
+
+/* footer starts*/
+footer{
+    height: 269px;
+    background-color: var(--purple);
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.footer-section{
+    padding: 4rem 11%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-logo{
+    font-size: 2.4rem;
+}
+
+.footer-sumber {
+    padding-top: 2rem;
+}
+
+.footer-sumber h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.footer-sumber .sumber-materi{
+    font-size: 2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.sumber-materi ul{
+    list-style-type: none;
+    line-height: 4rem;
+}
+
+.sumber-materi ul li a{
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 0.7rem;
+}
+/* footer ends*/
+
+/* breakpoint */
+@media screen and (max-width: 834px) {
+    .content-home {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 14rem;
+    }
+
+    .content .home-text{
+        margin-left: -2rem;
+    }
+
+    .content .content-home img {
+        width: 280px;
+        margin-top: -3rem;
+    }
+
+    .content-home .home-text h1 {
+        font-size: 2.8rem;
+        max-width: 28rem;
+    }
+
+    .content-home .home-text a {
+        font-size: 2.4rem;
+        max-width: 20rem;
+        padding: 1rem 2.5rem;
+        text-align: center;
+    }
+
+    .content-about img {
+        width: 100%;
+        margin-top: -12rem;
+    }
+
+    .about-text {
+        margin-top: -28%;
+        max-width: 82rem;
+    }
+
+    .about-text h1 {
+        margin-top: 6rem;
+        font-size: 5rem;
+    }
+    
+    .about-text p {
+        color: black;
+        margin: 11rem 1%;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    
+    .content-fitur .fitur-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-fitur .fitur-section .fitur-text {
+        margin-top: -3rem;
+    }
+    
+    .content-fitur .fitur-section .fitur-text p{
+        color: black;
+        font-size: 2.3rem;
+        padding-bottom: 0.4rem;
+    }
+    
+    .content-fitur .fitur-section img {
+        width: 450px;
+        margin: auto;
+    } 
+
+    .fitur-materi {
+        margin: -20rem 7%;
+    }
+    
+    .fitur-materi h1{
+        font-size: 4.2rem;
+    }
+    
+    .fitur-materi .semua-materi{
+        gap: 0.8rem;
+    }
+    
+    .fitur-materi .semua-materi .materi {
+        height: 250px;
+    }
+    
+    .materi img {
+        width: 210px;
+    }
+    
+    .materi h2 {
+        font-size: 2.7rem;
+    }
+    
+    .fitur-learning {
+        flex-direction: column;
+    }
+
+    .learning-text{
+        gap: 35rem;
+        text-align: center;
+    }
+
+    .fitur-learning img {
+        width: 70%;
+        margin: -48rem 20%;
+    }
+
+    .learning-text a {
+        margin: auto;
+    }
+
+    footer{
+        height: 269px;
+        background-color: var(--purple);
+        bottom: 0;
+        margin-top: 60rem;
+    }
+    
+    .footer-section{
+        padding: 3rem 7% 7rem 7%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    
+    .footer-logo{
+        font-size: 1.7rem;
+        padding-top: 1.6rem;
+    }
+
+    
+     .footer-sumber h3{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    
+    .footer-sumber .sumber-materi{
+        font-size: 1.9rem;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .sumber-materi ul{
+        list-style-type: none;
+        line-height: 3rem;
+    }
+    
+    .sumber-materi ul li a{
+        color: white;
+    }
+    
+    .copyright p{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 2rem 5%;
+    }
+
+    .image {
+        width: 100%;
+     }
+    
+     header .navbar a {
+        margin-left: 0.3rem;
+     }
+
+     .content-home {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 13rem;
+    }
+
+    .content .home-text{
+        margin-left: -2rem;
+    }
+
+    .content .content-home img {
+        width: 280px;
+    }
+
+    .content-home .home-text h1 {
+        font-size: 2.8rem;
+        max-width: 28rem;
+    }
+
+    .content-home .home-text a {
+        font-size: 2.4rem;
+        max-width: 20rem;
+        padding: 1rem 2.5rem;
+        text-align: center;
+    }
+
+    .content .home-text{
+        margin-left: -2rem;
+    }
+
+    .content .content-home img {
+        width: 250px;
+        margin-top: -5rem;
+    }
+
+    .content-home .home-text h1 {
+        font-size: 2.8rem;
+        max-width: 28rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-home .home-text a {
+        font-size: 2.4rem;
+        max-width: 20rem;
+        padding: 1rem 2.5rem;
+        margin: 1rem auto;     
+    }
+
+    .content-about img {
+        width: 130%;
+        margin-top: -13rem;
+        margin-left: -18rem;
+    }
+
+    .about-text {
+        margin-top: -32%;
+        max-width: 82rem;
+    }
+
+    .about-text h1 {
+        font-size: 5rem;
+    }
+    
+    .about-text p {
+        color: black;
+        margin: 10rem 0;
+        font-size: 2.4rem;
+        text-align: center;
+        
+    }
+
+    .content-fitur .fitur-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-fitur .fitur-section .fitur-text {
+        margin-top: -3rem;
+    }
+    
+    .content-fitur .fitur-section .fitur-text p{
+        color: black;
+        font-size: 2.1rem;
+        padding-bottom: 0.4rem;
+    }
+    
+    .content-fitur .fitur-section img {
+        width: 270px;
+        margin: auto;
+    } 
+
+    .fitur-materi {
+        margin: -23rem 7%;
+    }
+    
+    .fitur-materi h1{
+        font-size: 4.2rem;
+    }
+    
+    .fitur-materi .semua-materi{
+        gap: 0.5rem;
+    }
+    
+    .fitur-materi .semua-materi .materi {
+        height: 250px;
+    }
+    
+    .materi img {
+        width: 190px;
+    }
+    
+    .materi h2 {
+        font-size: 2.7rem;
+    }
+
+    .fitur-learning {
+        flex-direction: column;
+    }
+
+    .learning-text{
+        gap: 35rem;
+        text-align: center;
+    }
+
+    .fitur-learning img {
+        width: 70%;
+        margin: -48rem 20%;
+    }
+
+    .learning-text a {
+        margin: auto;
+    }
+
+    footer{
+        height: 269px;
+        background-color: var(--purple);
+        bottom: 0;
+        margin-top: 60rem;
+    }
+    
+    .footer-section{
+        padding: 3rem 7% 7rem 7%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    
+    .footer-logo{
+        font-size: 1.7rem;
+        padding-top: 1.6rem;
+    }
+
+    
+     .footer-sumber h3{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    
+    .footer-sumber .sumber-materi{
+        font-size: 1.9rem;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .sumber-materi ul{
+        list-style-type: none;
+        line-height: 3rem;
+    }
+    
+    .sumber-materi ul li a{
+        color: white;
+    }
+    
+    .copyright p{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body{
+        height: 100vh;
+        
+    }
+    header .navbar {
+        display: none;
+    }
+
+    header .navbar {
+        display: flex;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background-color: #d9dcff;
+        top: 55px;
+        height: 100vh;
+        width: 250px;
+        z-index: -1;
+        box-shadow: 0 .5rem 8rem #8b78d8ab;
+        border: 2px solid var(--purple);
+        border-top: none;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+     }
+
+     header .navbar.slide{
+        transform: translateX(0);
+        opacity: 1;
+     }
+
+     header .navbar a{
+        color: var(--purple);
+        margin-top: 10px;
+        margin-left: 0;
+        font-size: 2.5rem;
+        padding: 18px 40px ;
+     }
+
+     .image {
+        width: 100%;
+     }
+
+     .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .menu-toggle input {
+        position: absolute;
+        width: 40px;
+        height: 28px;
+        opacity: 0;
+        left: -6px;
+        top: -4px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    /* hamburger menu animasi */
+    .menu-toggle span{
+        display: block;
+        border-radius: 3px;
+        background-color: white;
+        transition: all 0.5s;
+    }
+    
+    .menu-toggle span:nth-child(2) {
+        width: 28px;
+        height: 3px;
+    }
+    
+    .menu-toggle span:nth-child(3) {
+        width: 22px;
+        height: 3px;
+        margin-left: 6px;
+    }
+    
+    .menu-toggle span:nth-child(4) {
+        width: 18px;
+        height: 3px;
+        margin-left: 10px;
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(2){
+        transform: translate(0, 10px) rotate(-45deg);
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(3){
+        opacity: 0;
+        transform: scale(0);
+        transition: .1s;
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(4){
+        transform: translate(0, -7px) rotate(45deg);
+        margin-left: -0.10px;
+        width: 28px;
+    }
+
+    .content-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 23rem;
+        text-align: center;
+    }
+
+    .content .home-text{
+        gap: 20rem;
+        margin-left: -2rem;
+    }
+
+    .content .content-home img {
+        width: 250px;
+        margin-top: -34rem;
+    }
+
+    .content-home .home-text h1 {
+        font-size: 2.8rem;
+        max-width: 28rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-home .home-text a {
+        font-size: 2.4rem;
+        max-width: 20rem;
+        padding: 1rem 2.5rem;
+        margin: 1.5rem auto;
+        
+    }
+
+    .content-about img {
+        width: 155%;
+        margin-top: 2rem;
+    }
+
+    .about-text {
+        margin-top: -19rem;
+    }
+
+    .about-text h1 {
+        font-size: 3.7rem;
+    }
+    
+    .about-text p {
+        color: black;
+        margin: 5.5rem -15%;
+        font-size: 2.4rem;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .content-fitur .header-fitur{
+        font-size: 3.8rem;
+    }
+
+    .content-fitur .fitur-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-fitur .fitur-section .fitur-text {
+        margin-top: 1rem;
+    }
+    
+    .content-fitur .fitur-section .fitur-text h1{
+        font-size: 3rem;
+        margin-left: -1.7rem;
+    }
+    .content-fitur .fitur-section .fitur-text p{
+        color: black;
+        font-size: 1.6rem;
+        padding-bottom: 0.4rem;
+        margin-left: -1.7rem;
+    }
+    
+    .content-fitur .fitur-section img {
+        width: 225px;
+        margin: auto;
+    } 
+
+    .fitur-materi {
+        margin: -25rem 18%;
+    }
+    
+    .fitur-materi h1{
+        font-size: 3rem;
+    }
+    
+    .fitur-materi .semua-materi{
+        display: flex;
+        flex-direction: column;
+        margin-top: -0.2rem;
+    }
+    
+    .fitur-materi .semua-materi .materi {
+        height: 233px;
+    }
+    
+    .materi img {
+        width: 210px;
+    }
+    
+    .materi h2 {
+        font-size: 2.5rem;
+        max-width: 15rem;
+    }
+
+    .fitur-learning {
+        flex-direction: column;
+    }
+
+    .learning-text{
+        gap: 28rem;
+        text-align: center;
+        margin-top: -3rem;
+    }
+
+    .fitur-learning img {
+        width: 100%;
+        margin: -37rem 1%;
+    }
+
+    .learning-p p{
+        font-size: 3.3rem;
+        margin-left: -14% ;
+    }
+
+    .learning-text a {
+        font-size: 2.4rem;
+        max-width: 22rem;
+        padding: 1rem;
+        margin: auto 0rem;
+    }
+
+    footer{
+        height: 269px;
+        background-color: var(--purple);
+        bottom: 0;
+        margin-top: 60rem;
+    }
+    
+    .footer-section{
+        padding: 1rem 4% 4rem 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+    }
+    
+    .footer-logo{
+        font-size: 1.7rem;
+        padding-top: 1.6rem;
+    }
+
+    
+     .footer-sumber h3{
+        font-size: 2.4rem;
+        text-align: left;
+    }
+    
+    .footer-sumber .sumber-materi{
+        font-size: 1.9rem;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .sumber-materi ul{
+        list-style-type: none;
+        line-height: 3rem;
+    }
+    
+    .sumber-materi ul li a{
+        color: white;
+    }
+    
+    .copyright p{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+
