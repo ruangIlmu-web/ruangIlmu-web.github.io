@@ -67,7 +67,6 @@ header .navbar a{
     color: white;
     padding: 0.5rem 1.8rem;
     border-radius: 0.7rem;
-    outline: none;
 }
 
 header .navbar a:hover {
@@ -94,59 +93,54 @@ transform: scaleX(-1);
 }
 
 /* materi starts */
-.fitur-materi{
-    margin: -30rem 15rem 20rem 15rem;
+.list-materi{
+    margin: 0 15rem 20rem 15rem;
 }
 
-.fitur-materi h1 {
+.container-materi {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 24px;
+    justify-content: center;
+}
+
+.list-materi h1 {
     color: black;
     text-align: center;
     font-size: 5rem;
+    margin-bottom: 5rem;
 }
 
-.fitur-materi .semua-materi{
-    display: flex;
-    gap: 2rem;
-    margin-top: 4rem;
-}
-
-.fitur-materi .semua-materi .materi {
+.list-materi  .materi {
     border: 2px solid var(--purple);
     box-shadow: 0px 4px 77px 17px rgba(108, 82, 207, 0.19);
-    height: 48rem;
-    width: 30rem;
-    flex-grow: 1;
-    border-radius: 2rem;
-    margin-top: 8px;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+    height: 24rem;
+    border-radius: 1rem;
+    padding-top: 5px;
 } 
 
-.materi img {
-    display: flex;
-    margin: auto;
-    width: 250px;
-    /* padding: 20px; */
-    border: 1px solid var(--purple);
-    border-radius: 18px;
-}
+
 
 .materi p {
-    font-size: 2.2rem;
+    font-size: 2.7em;
     text-align: left;
-    max-width: 38rem;
-    margin: 3rem;
+    max-width: 40rem;
+    margin: 2rem 2rem 7rem 2rem;
     color: var(--purple);
-    padding-top: 0.7rem;
     color: black;
-    font-weight: 600;
+    font-weight: 700;
+    text-align: center;
 }
 
 .materi a {
-    font-size: 2.7rem; 
+    font-size: 2rem; 
     background-color: var(--purple); 
     color: white; 
     font-weight: 500; 
-    margin: 1rem 7rem;
+    margin: -33rem 2rem;
     padding: 13px 29px; 
     border-radius: 42px; 
     cursor: pointer; 
@@ -164,7 +158,7 @@ transform: scaleX(-1);
 
 /* footer starts*/
 footer{
-    height: 269px;
+    height: 259px;
     background-color: var(--purple);
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
@@ -205,6 +199,10 @@ footer{
     color: white;
 }
 
+.sumber-materi ul li a:visited {
+    color: white;
+}
+
 .copyright {
     text-align: center;
     color: white;
@@ -215,111 +213,100 @@ footer{
 
 /* breakpoint */
 @media screen and (max-width: 1280px) {
-    .materi-text{
-        margin-top: -2.5rem;
+    .list-materi{
+        margin: 0 10rem 20rem 10rem;
     }
+
+}
+@media screen and (max-width: 1194px){
+    .list-materi{
+        margin: 0 6rem 20rem 6rem;
+    }
+
+    .materi a{
+        font-size: 1.9rem; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .list-materi{
+        margin: 8rem 4rem 20rem 4rem;
+    }
+    .container-materi {
+        display: grid;
+        grid-template-columns: repeat(4, 210px);
+        gap: 24px;
+    }
+
+    .list-materi  .materi {
+        gap: 30rem;
+        height: 20rem;
+        border-radius: 1rem;
+        padding-top: 5px;
+    } 
+    
+    .materi p {
+        font-size: 2.2rem;
+        text-align: left;
+        max-width: 20rem;
+        margin: 1rem 2rem 0 2rem;
+        text-align: center;
+    }
+
     .materi a {
-        font-size: 2.7rem; 
+        font-size: 1.9rem;  
         background-color: var(--purple); 
         color: white; 
         font-weight: 500; 
-        margin: 1rem 5rem;
+        margin: -28rem 2rem;
         padding: 13px 29px; 
         border-radius: 42px; 
         cursor: pointer; 
         text-align: center;
     }
-}
-@media screen and (max-width: 1194px){
-    .fitur-materi{
-        display: flex;
-        flex-direction: column;
-        margin: -30rem 4rem 15rem 4rem;
-    }
-    
-    .fitur-materi .semua-materi{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 4rem  auto;
-    }
-    
-    .fitur-materi .semua-materi .materi {
-        height: 25rem;
-        width: max-content;
-        display: flex;
-        gap: 2rem;
+
+    .materi a:hover{
+        width: 16.5rem;
     }
 
-    .materi-text{
-        margin-top: 0.1rem;
-    }
-    
-    .materi img {
-        width: 263px;
-        margin-left: 2rem;
-    }
-    
-    .materi p {
-        font-size: 2.1rem;
-        margin: 0 2rem 4rem 0;
-        font-weight: 600;
-    }
-    
-    .materi a {
-        font-size: 2.1rem; 
-        font-weight: 500; 
-        margin-left: 11rem;
-        padding: 14px 20px; 
-        width: 46rem;
-        text-align: center;
-    }
 }
+
 @media screen and (max-width: 834px) {
-    .fitur-materi{
-        display: flex;
-        flex-direction: column;
-        margin: -13rem 4rem -50rem 4rem;
+    .list-materi{
+        margin: 8rem 4rem -30rem 4rem;
     }
 
-    .materi-text{
-        margin-top: 0.1rem;
-    }
+    .list-materi  .materi {
+        gap: 30rem;
+        height: 18rem;
+        border-radius: 1rem;
+        padding-top: 5px;
+    } 
     
-    .fitur-materi .semua-materi{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 4rem  auto;
-    }
-    
-    .fitur-materi .semua-materi .materi {
-        height: 25rem;
-        width: max-content;
-        display: flex;
-        gap: 2rem;
-    }
-    
-    .materi img {
-        width: 263px;
-        margin-left: 2rem;
-    }
     
     .materi p {
-        font-size: 2.1rem;
-        margin: 0 2rem 4rem 0;
-        font-weight: 600;
-    }
-    
-    .materi a {
-        font-size: 2.1rem; 
-        font-weight: 500; 
-        margin-left: 11rem;
-        padding: 14px 20px; 
-        width: 46rem;
+        font-size: 2rem;
+        text-align: left;
+        max-width: 20rem;
+        margin: 1rem 2rem 0 2rem;
         text-align: center;
     }
 
+    .materi a {
+        font-size: 1.5rem; 
+        margin: -28rem 2rem;
+        text-align: center;
+    }
+
+    .materi a:hover{
+        width: 13.8rem;
+    }
+
+    .container-materi {
+        display: grid;
+        grid-template-columns: repeat(4, 180px);
+        gap: 11px;
+    }
     footer{
         height: 269px;
         background-color: var(--purple);
@@ -366,50 +353,45 @@ footer{
     }
 }
 
-
 @media screen and (max-width: 768px) {
-    .fitur-materi{
-        display: flex;
-        flex-direction: column;
-        margin: -13rem 3rem -50rem 3rem;
+    .list-materi{
+        margin: 8rem 4rem -50rem 4rem;
+    }
+    .container-materi {
+        display: grid;
+        grid-template-columns: repeat(3, 210px);
+        gap: 24px;
     }
 
-    .materi-text{
-        margin-top: 0.1rem;
-    }
-    
-    .fitur-materi .semua-materi{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 4rem  auto;
-    }
-    
-    .fitur-materi .semua-materi .materi {
-        height: 25rem;
-        width: max-content;
-        display: flex;
-        gap: 2rem;
-    }
-    
-    .materi img {
-        width: 263px;
-        margin-left: 2rem;
-    }
+    .list-materi  .materi {
+        gap: 30rem;
+        height: 20rem;
+        border-radius: 1rem;
+        padding-top: 5px;
+    } 
     
     .materi p {
-        font-size: 2.1rem;
-        margin: 0 2rem 4rem 0;
-        font-weight: 600;
-    }
-    
-    .materi a {
-        font-size: 2.1rem; 
-        font-weight: 500; 
-        margin-left: 11rem;
-        padding: 14px 20px; 
-        width: 46rem;
+        font-size: 2.2rem;
+        text-align: left;
+        max-width: 20rem;
+        margin: 1rem 2rem 0 2rem;
         text-align: center;
+    }
+
+    .materi a {
+        font-size: 1.9rem; 
+        background-color: var(--purple); 
+        color: white; 
+        font-weight: 500; 
+        margin: -28rem 2rem;
+        padding: 13px 29px; 
+        border-radius: 42px; 
+        cursor: pointer; 
+        text-align: center;
+    }
+
+    .materi a:hover{
+        width: 16.5rem;
     }
 
 }
@@ -518,54 +500,50 @@ footer{
         width: 28px;
     }
 
-    /* fitur */
-    .fitur-materi{
-        margin: -4rem 1rem -50rem 1rem;
-    }
-    
-    .fitur-materi h1 {
-        font-size: 3.5rem;
-    }
-    
-    .fitur-materi .semua-materi{
+    /* materi */
+    .list-materi{
+        margin: 2rem 11%;
+        height: 40rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+    }
+    .container-materi {
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+        gap: 14px;
+        justify-content: center;
     }
 
-    .materi-text{
-        display: flex;
-        flex-direction: column;
-        margin-top: -4rem;
+    .list-materi h1{
+        font-size: 4rem;
     }
-    
-    .fitur-materi .semua-materi .materi {
-        height: 47rem;
-        width: 30rem;
-        margin-top: 1px;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .materi img {
-        width: 250px;
-        margin: auto;
-    }
+    .list-materi  .materi {
+        gap: 30rem;
+        height: 16rem;
+        border-radius: 1rem;
+        padding-top: 5px;
+    } 
     
     .materi p {
-        font-size: 2.1rem;
-        margin: 2rem;
-        padding-top: 1.9rem;
+        font-size: 1.73rem;
+        text-align: left;
+        max-width: 27rem;
+        margin: 1rem 2rem 0 2rem;
+        text-align: center;
     }
-    
+
     .materi a {
-        font-size: 2.3rem; 
-        margin: auto;
-        padding: 13px 9px; 
-        max-width: 20rem;
+        font-size: 1.5rem; 
+        font-weight: 500; 
+        margin: -28rem 2rem;
+        padding: 10px 12px; 
+        text-align: center;
     }
-    /* fitur ends */
+
+    .materi a:hover{
+        width: 11.5rem;
+    }
+    /* list ends */
     footer{
         height: 269px;
         background-color: var(--purple);
