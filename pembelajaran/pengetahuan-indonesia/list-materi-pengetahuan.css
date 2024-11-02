@@ -507,7 +507,7 @@ footer{
     /* materi */
     .list-materi{
         margin: 2rem 11%;
-        height: 40rem;
+        height: 60rem;
         display: flex;
         flex-direction: column;
     }

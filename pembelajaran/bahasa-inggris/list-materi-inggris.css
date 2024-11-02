@@ -143,7 +143,6 @@ transform: scaleX(-1);
     border-radius: 42px; 
     cursor: pointer; 
     text-align: center;
-    outline: none;
 }
 
 .materi a:hover {
@@ -215,14 +214,37 @@ footer{
         margin: 0 10rem 20rem 10rem;
     }
 
+    .materi p {
+        font-size: 3.3rem;
+        line-height: 3.6rem;
+        max-width: 18rem;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .materi a {
+        font-size: 1.9rem; 
+        text-align: center;
+    }
 }
+
+
 @media screen and (max-width: 1194px){
     .list-materi{
         margin: 0 6rem 20rem 6rem;
     }
 
-    .materi a{
+    .materi p {
+        font-size: 3.3rem;
+        line-height: 3.6rem;
+        max-width: 18rem;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .materi a {
         font-size: 1.9rem; 
+        text-align: center;
     }
 }
 
@@ -251,13 +273,17 @@ footer{
         text-align: center;
     }
 
-    .materi a {
-        font-size: 1.9rem;  
+    .materi p {
+        font-size: 3rem;
+        line-height: 2.8rem;
+        max-width: 14rem;
         text-align: center;
+        margin-top: auto;
     }
 
-    .materi a:hover{
-        width: 14.8rem;
+    .materi a {
+        font-size: 1.9rem; 
+        text-align: center;
     }
 
 }
@@ -274,15 +300,16 @@ footer{
     } 
     
     .materi p {
-        font-size: 2rem;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
         max-width: 14rem;
         text-align: center;
+        margin-top: auto;
     }
 
     .materi a {
-        font-size: 1.5rem; 
+        font-size: 1.6rem; 
         text-align: center;
-        margin-top: auto;
     }
 
     .materi a:hover{
@@ -296,7 +323,6 @@ footer{
     }
     footer{
         height: 269px;
-        background-color: var(--purple);
         bottom: 0;
         margin-top: 60rem;
     }
@@ -357,10 +383,11 @@ footer{
     } 
     
     .materi p {
-        font-size: 2.2rem;
-        text-align: left;
+        font-size: 3rem;
+        line-height: 2.8rem;
         max-width: 14rem;
         text-align: center;
+        margin-top: auto;
     }
 
     .materi a {
@@ -369,7 +396,7 @@ footer{
     }
 
     .materi a:hover{
-        width: 15rem;
+        width: 14.5rem;
     }
 
 }
@@ -502,27 +529,35 @@ footer{
     } 
     
     .materi p {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
+        line-height: 2.1rem;
         text-align: left;
         max-width: 27rem;
         text-align: center;
+        margin-top: auto;
     }
 
     .materi a {
-        font-size: 1.5rem; 
-        width: 10rem;
+        font-size: 1.6rem; 
+        width: 12rem;
+        font-weight: 500;
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
-       margin-top: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        margin-top: auto;
     }
 
     .materi a:hover{
-        width: 10rem;
+        width: 12rem;
+        padding: 1rem 1.5rem;
     }
     /* list ends */
     footer{
         height: 269px;
-        background-color: var(--purple);
         bottom: 0;
         margin-top: 60rem;
     }
