@@ -25,6 +25,7 @@ html {
     font-size: 62.5%; /* 16px * 62.5% = 10px */
     overflow-x: hidden;
     overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -765,7 +766,7 @@ footer{
         display: block;
         border-radius: 3px;
         background-color: white;
-        transition: all 0.5s;
+        transition: all 0.1s;
     }
     
     .menu-toggle span:nth-child(2) {
