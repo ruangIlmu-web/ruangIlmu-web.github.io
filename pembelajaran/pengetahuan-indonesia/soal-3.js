@@ -1,49 +1,50 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Tari tradisional yang berasal dari Nanggroe Aceh Darussalam adalah?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Tari Serampang 12", correct: false},
+            {text: "Tari Saman", correct: true},
+            {text: "Tari Merak", correct: false},
+            {text: "Tari Jaipong", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Tari yang terkenal dari Sumatera Utara adalah?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Tari Piring", correct: false},
+            {text: "Tari Baluse", correct: true},
+            {text: "Tari Saman", correct: false},
+            {text: "Tari Bedaya", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Tari Serimpi berasal dari daerah?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Jawa Timur", correct: false},
+            {text: "Jawa Tengah", correct: false},
+            {text: "Yogyakarta", correct: true},
+            {text: "Jawa Barat", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Tari Kecak berasal dari?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Bali", correct: true},
+            {text: "Nusa Tenggara Barat", correct: false},
+            {text: "Kalimantan", correct: false},
+            {text: "Papua", correct: false},
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Tari yang biasanya ditampilkan sebagai simbol pemujaan kepada Tuhan adalah?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Tari Remo", correct: false},
+            {text: "Tari Kuda Kepang", correct: false},
+            {text: "Seni Tari Tradisional", correct: false},
+            {text: "Tari Cakalele", correct: true},
         ]
     }
+     
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +130,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

@@ -122,9 +122,36 @@ transform: scaleX(-1);
 }
 
 .topik-materi .isi-materi p {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-bottom: 3rem;
     font-weight: 450;
+}
+
+h2{
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+pre {
+    margin-left: -10rem;
+}
+
+span{
+    font-style: italic;
+}
+h3{
+    font-size: 2.7rem;
+}
+
+.rumus h2{
+    color: var(--purple);
+}
+.isi-materi ul li{
+    font-size: 2.4rem;
+}
+
+.isi-materi ul {
+    margin-left: 5rem;
 }
 
 .button{
@@ -152,6 +179,27 @@ transform: scaleX(-1);
     cursor: pointer;
 }
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+
+#belajarLagiButton.clicked {
+    background-color: rgba(255, 138, 138, 0.533); /* Latar belakang merah pudar */
+    border-color: red; /* Border merah */
+    color: red;
+}
+
+#mengertiButton.clicked {
+    background-color: rgba(0, 255, 0, 0.1); /* Latar belakang hijau muda pudar */
+    border-color: green; /* Border hijau */
+    color: green;
+}
+
 .button .button-soal {
     background-color: var(--purple);
     font-size: 2.4rem;
@@ -160,6 +208,7 @@ transform: scaleX(-1);
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 1.2rem;
+    font-weight: 500;
 }
 
 .button-soal a{
@@ -420,6 +469,9 @@ footer{
     }
 
     /* materi */
+    main{
+        height: max-content;
+    }
     .topik-materi {
         max-width: 100%;
         margin-bottom: 0;
@@ -432,7 +484,16 @@ footer{
     }
 
     .topik-materi h1 {
-        font-size: 2.8rem;
+        font-size: 2.7rem;
+        width: 35rem;
+    }
+
+    .topik-materi pre{
+        font-size: 2rem;
+    }
+
+    .topik-materi ul{
+        margin-left: 2rem;
     }
 
     .topik-materi .isi-materi p{

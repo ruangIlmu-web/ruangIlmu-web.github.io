@@ -1,49 +1,49 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa arti dari kata “Panca” dalam Pancasila?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Satu", correct: false},
+            {text: "Lima", correct: true},
+            {text: "Dasar", correct: false},
+            {text: "Negara", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Lambang rantai dalam Pancasila melambangkan?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Kesejahteraan", correct: false},
+            {text: "Kemanusiaan yang adil dan beradab", correct: true},
+            {text: "Hubungan manusia", correct: false},
+            {text: "Persatuan Indonesia", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Lambang pohon beringin dalam Pancasila melambangkan?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Persatuan Indonesia", correct: true},
+            {text: "Ketuhanan Yang Maha Esa", correct: false},
+            {text: "Musyawarah", correct: false},
+            {text: "Sandang dan pangan", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Apa makna dari lambang banteng dalam Pancasila?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Persatuan Indonesia", correct: false},
+            {text: "Kemanusiaan", correct: false},
+            {text: "Musyawarah", correct: true},
+            {text: "Ketuhanan", correct: false},
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Lambang padi dan kapas dalam Pancasila menggambarkan?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Keadilan sosial", correct: true},
+            {text: "Pangan dan sandang", correct: false},
+            {text: "Kemanusiaan yang adil", correct: false},
+            {text: "Ketuhanan Yang Maha Esa", correct: false},
         ]
-    }
+    }    
 ];
 
 const questionElement = document.getElementById("question");

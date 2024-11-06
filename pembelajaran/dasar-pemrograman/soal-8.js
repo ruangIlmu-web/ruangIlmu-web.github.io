@@ -1,47 +1,47 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa yang dimaksud dengan struktur data?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Metode untuk menulis program", correct: false},
+            {text: "Metode untuk menyimpan dan mengatur data", correct: true},
+            {text: "Tipe bahasa pemrograman", correct: false},
+            {text: "Alat untuk mengolah gambar", correct: false}
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Keunggulan utama dari array adalah?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Akses data yang lambat", correct: false},
+            {text: "Penyimpanan data dinamis", correct: false},
+            {text: "Pencarian data menggunakan indeks", correct: true},
+            {text: "Memori yang lebih sedikit", correct: false}
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Stack adalah struktur data dengan urutan?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "LIFO", correct: true},
+            {text: "FIFO", correct: false},
+            {text: "Tabel", correct: false},
+            {text: "Satu jenis data", correct: false}
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Traversal yang digunakan pada linked list adalah?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Acak", correct: false},
+            {text: "Berurutan", correct: false},
+            {text: "Sekuensial", correct: true},
+            {text: "Hierarkis", correct: false}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Kelebihan utama hash table adalah?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Memerlukan lebih banyak memori", correct: false},
+            {text: "Akses data yang cepat", correct: true},
+            {text: "Struktur yang lebih sederhana", correct: false},
+            {text: "Proses penambahan data cepat", correct: false}
         ]
     }
 ];
@@ -104,7 +104,6 @@ function selectAnswer(e) {
     Array.from(answerContainer.children).forEach(button => {
         button.disabled = true;
     });
-
     // Lanjut ke pertanyaan berikutnya jika masih ada
     currentQuestionIndex++;
 
@@ -129,6 +128,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

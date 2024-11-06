@@ -1,49 +1,49 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa tujuan penggunaan alat pemrograman bagi seorang programmer?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {"text": "Mendukung efektivitas dan efisiensi kerja", "correct": true},
+            {"text": "Mengurangi waktu bekerja", "correct": false},
+            {"text": "Mengurangi kebutuhan belajar", "correct": false},
+            {"text": "Menyimpan data program", "correct": false}
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Fitur kode editor yang berfungsi memberi warna pada kode disebut?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {"text": "Autocomplete", "correct": false},
+            {"text": "Syntax Highlighting", "correct": true},
+            {"text": "Auto Indentation", "correct": false},
+            {"text": "Plugin", "correct": false}
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Berikut ini yang merupakan contoh kode editor adalah?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {"text": "Visual Studio Code", "correct": true},
+            {"text": "Visual Studio", "correct": false},
+            {"text": "IntelliJ IDEA", "correct": false},
+            {"text": "PHPStorm", "correct": false}
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "IDE memungkinkan programmer untuk?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {"text": "Menulis kode", "correct": false},
+            {"text": "Menulis, menguji, dan mendebug", "correct": true},
+            {"text": "Mengakses internet", "correct": false},
+            {"text": "Menambahkan plugin", "correct": false}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Apa perbedaan utama IDE dengan kode editor?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {"text": "IDE hanya untuk debugging", "correct": false},
+            {"text": "Kode editor hanya untuk Bahasa tertentu", "correct": false},
+            {"text": "Kode editor punya lebih banyak fitur", "correct": false},
+            {"text": "IDE mempunyai compiler dan debugger", "correct": true}
         ]
-    }
+    }    
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +129,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

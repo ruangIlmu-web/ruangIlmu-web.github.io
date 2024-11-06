@@ -1,49 +1,50 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Bubur Manado adalah makanan khas dari?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Yogyakarta", correct: false},
+            {text: "Manado", correct: true},
+            {text: "Palembang", correct: false},
+            {text: "Jakarta", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Makanan yang terkenal dari Sumatera Barat adalah?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Nasi Kuning", correct: false},
+            {text: "Rendang", correct: true},
+            {text: "Pempek", correct: false},
+            {text: "Coto Makassar", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Sate biasanya terbuat dari?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Ikan", correct: false},
+            {text: "Daging Ayam atau Kambing", correct: true},
+            {text: "Sayuran", correct: false},
+            {text: "Tahu", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Pempek merupakan makanan khas dari?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Makassar", correct: false},
+            {text: "Palembang", correct: true},
+            {text: "Jakarta", correct: false},
+            {text: "Bali", correct: false},
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Kue Rangi adalah kue tradisional dari?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Betawi", correct: true},
+            {text: "Bali", correct: false},
+            {text: "Papua", correct: false},
+            {text: "Aceh", correct: false},
         ]
     }
+           
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +130,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

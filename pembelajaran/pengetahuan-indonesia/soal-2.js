@@ -1,49 +1,49 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa nama ibukota Indonesia yang terletak di Pulau Jawa?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Surabaya", correct: false},
+            {text: "Jakarta", correct: true},
+            {text: "Bandung", correct: false},
+            {text: "Yogyakarta", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Pulau Kalimantan dikenal dengan julukan?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Pulau Seribu Danau", correct: false},
+            {text: "Pulau Seribu Sungai", correct: true},
+            {text: "Pulau Seribu Kebun", correct: false},
+            {text: "Pulau Seribu Hutan", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Bentuk Pulau Papua sering disamakan dengan?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Kepala Ular", correct: false},
+            {text: "Kepala Burung", correct: true},
+            {text: "Kepala Kucing", correct: false},
+            {text: "Kepala Kuda", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Pulau Sulawesi memiliki bentuk yang mirip dengan huruf?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "L", correct: false},
+            {text: "U", correct: false},
+            {text: "T", correct: false},
+            {text: "K", correct: true},
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Pulau mana yang terletak di ujung paling barat Indonesia?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Pulau Kalimantan", correct: false},
+            {text: "Pulau Sumatera", correct: true},
+            {text: "Pulau Papua", correct: false},
+            {text: "Pulau Jawa", correct: false},
         ]
-    }
+    }        
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +129,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

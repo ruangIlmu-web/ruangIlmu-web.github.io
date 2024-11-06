@@ -1,49 +1,49 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa yang menjadi hutan terluas ketiga di dunia?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Hutan Amazon", correct: false},
+            {text: "Hutan Siberia", correct: false},
+            {text: "Hutan Indonesia", correct: true},
+            {text: "Hutan Kongo", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Luas hutan di Indonesia diperkirakan sekitar?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "80.000.000 hektar", correct: false},
+            {text: "90.000.000 hektar", correct: false},
+            {text: "99.000.000 hektar", correct: true},
+            {text: "100.000.000 hektar", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Berapa hektar lahan hutan hilang setiap tahunnya di Indonesia?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "400.000 hektar", correct: false},
+            {text: "500.000 hektar", correct: false},
+            {text: "600.000 hektar", correct: true},
+            {text: "700.000 hektar", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Apa manfaat utama dari hutan di Indonesia?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Menyediakan tempat tinggal", correct: false},
+            {text: "Menyediakan kayu dan menjaga keseimbangan lingkungan", correct: true},
+            {text: "Sumber penghasilan utama", correct: false},
+            {text: "Menyediakan ruang untuk pertanian", correct: false},
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Mengapa Indonesia dikenal sebagai negara maritim?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Karena memiliki banyak gunung", correct: false},
+            {text: "Karena sebagian besar wilayahnya terdiri dari lautan", correct: true},
+            {text: "Karena banyaknya sumber daya mineral", correct: false},
+            {text: "Karena banyak pulau-pulau kecil", correct: false},
         ]
-    }
+    }    
 ];
 
 const questionElement = document.getElementById("question");
@@ -104,7 +104,6 @@ function selectAnswer(e) {
     Array.from(answerContainer.children).forEach(button => {
         button.disabled = true;
     });
-
     // Lanjut ke pertanyaan berikutnya jika masih ada
     currentQuestionIndex++;
 
@@ -129,6 +128,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

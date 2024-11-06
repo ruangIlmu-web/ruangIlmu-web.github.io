@@ -1,49 +1,49 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa itu variabel dalam pemrograman?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Simbol yang digunakan untuk menyimpan nilai", correct: true},
+            {text: "Jenis nilai yang disimpan", correct: false},
+            {text: "Fungsi dalam program", correct: false},
+            {text: "Struktur data", correct: false}
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Dalam bahasa C, cara mendeklarasikan variabel dengan tipe data integer adalah?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "int = tinggi 178;", correct: false},
+            {text: "tinggi : int 178;", correct: false},
+            {text: "int tinggi = 178;", correct: true},
+            {text: "tinggi int = 178;", correct: false}
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Apa yang harus dihindari saat menamai variabel dalam bahasa C?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Menggunakan angka", correct: false},
+            {text: "Menggunakan underscore", correct: false},
+            {text: "Menggunakan kata kunci", correct: true},
+            {text: "Menggunakan huruf kecil", correct: false}
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Dalam bahasa PHP, variabel diawali dengan?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "@", correct: false},
+            {text: "#", correct: false},
+            {text: "$", correct: true},
+            {text: "%", correct: false}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Tipe data majemuk dalam pemrograman seperti array memiliki karakter yaitu?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Hanya bisa menyimpan satu nilai", correct: false},
+            {text: "Menyimpan banyak nilai dalam satu variabel", correct: true},
+            {text: "Selalu bertipe data integer", correct: false},
+            {text: "Tidak dapat digunakan dalam PHP", correct: false}
         ]
-    }
+    }    
 ];
 
 const questionElement = document.getElementById("question");
@@ -104,7 +104,6 @@ function selectAnswer(e) {
     Array.from(answerContainer.children).forEach(button => {
         button.disabled = true;
     });
-
     // Lanjut ke pertanyaan berikutnya jika masih ada
     currentQuestionIndex++;
 
@@ -129,6 +128,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

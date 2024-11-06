@@ -1,49 +1,50 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Bahasa yang digunakan oleh suku Sunda adalah?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Bahasa Betawi", correct: false},
+            {text: "Bahasa Jawa", correct: false},
+            {text: "Bahasa Sunda", correct: true},
+            {text: "Bahasa Madura", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Suku mana yang terkenal dengan ondel-ondel?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Suku Minangkabau", correct: false},
+            {text: "Suku Betawi", correct: true},
+            {text: "Suku Madura", correct: false},
+            {text: "Suku Dayak", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Bahasa yang digunakan oleh suku Banjar adalah?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Bahasa Madura", correct: false},
+            {text: "Bahasa Batak", correct: false},
+            {text: "Bahasa Banjar", correct: true},
+            {text: "Bahasa Bugis", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Suku Melayu terdapat di Provinsi?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Kalimantan Selatan", correct: false},
+            {text: "Bangka Belitung", correct: true},
+            {text: "Sumatera Barat", correct: false},
+            {text: "Sulawesi Selatan", correct: false},
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Apa nama suku yang terkenal dengan kebudayaan dan tradisi ritual yang kuat di Kalimantan?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Suku Banjar", correct: false},
+            {text: "Suku Dayak", correct: true},
+            {text: "Suku Bugis", correct: false},
+            {text: "Suku Asmat", correct: false},
         ]
     }
+    
 ];
 
 const questionElement = document.getElementById("question");
@@ -104,7 +105,6 @@ function selectAnswer(e) {
     Array.from(answerContainer.children).forEach(button => {
         button.disabled = true;
     });
-
     // Lanjut ke pertanyaan berikutnya jika masih ada
     currentQuestionIndex++;
 
@@ -129,6 +129,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

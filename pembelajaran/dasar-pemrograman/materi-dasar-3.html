@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to ruangIlmu</title>
+
+    <link rel="stylesheet" href="./materi-dasar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header section starts -->
+    <header>
+      <a href="#" class="logo">ruangIlmu</a>
+
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html">About</a>
+        <a href="../pembelajaran.html">Learning</a>
+        <a href="#article">Article</a>
+      </nav>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- Header section ends-->
+
+    <!-- main content starts -->
+<main>
+    <div class="topik-materi">
+        <h1>Apa Itu Coding dan Bagaimana Cara Mempelajarinya?</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qmNrg6fEyEw?si=3qjVTsXWy1eLgNW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="isi-materi">
+            <p>Dengan kemajuan teknologi, profesi programmer semakin banyak diminati oleh perusahaan. Bagi pemula yang tertarik untuk berkarir sebagai programmer, penting untuk mempelajari coding terlebih dahulu.</p>
+            <h2>Apa Itu Coding?</h2>
+            <p>Coding adalah proses menulis baris-baris kode dalam bahasa pemrograman. Tujuannya adalah untuk berkomunikasi dengan komputer agar dapat mengeksekusi perintah yang kita berikan. Berbeda dengan komunikasi manusia, komputer tidak memahami bahasa atau kata-kata; mereka hanya mengenal sinyal on dan off, yang diwakili oleh kode biner (1 dan 0). Kode biner ini dikelompokkan menjadi bytes, yaitu kelompok 8 digit yang merepresentasikan data.</p>
+            <p>Dengan banyaknya data yang harus diolah, manusia tidak bisa melakukannya secara manual karena akan memakan waktu dan rentan terhadap kesalahan. Oleh karena itu, bahasa pemrograman dibutuhkan untuk menyederhanakan pengelolaan data tersebut.</p>
+
+            <h2>Proses Coding</h2>
+            <p>Ketika kita menulis kode, kita menggunakan sintaks yang sesuai dengan bahasa pemrograman. Sintaks ini akan melalui proses yang disebut kompilasi, yang menjadikan kode lebih mudah dipahami oleh komputer. Ada beberapa jenis bahasa pemrograman berdasarkan proses kompilasinya:</p>
+            <ul>
+                <li><strong>Compiled Language:</strong>Bahasa yang harus diterjemahkan oleh compiler terlebih dahulu, seperti C, C++, atau Go.</li>
+                <li><strong>Interpreted Language:</strong>Bahasa yang bisa langsung dieksekusi tanpa kompilasi, seperti JavaScript, PHP, atau Python.</li>
+                <li><strong>Just-In-Time (JIT):</strong>Bahasa yang diterjemahkan oleh compiler saat program dijalankan, seperti Java dan C#.</li>
+            </ul>
+
+            <h2>Sintaks dan Semantik</h2>
+            <p>Setiap bahasa pemrograman memiliki aturan penulisan yang berbeda. Sintaks adalah aturan penulisan karakter yang benar, sedangkan semantik adalah makna dari kode yang kita tulis. Kode bisa saja benar secara sintaks tetapi salah secara semantik.</p>
+            <ul>
+                <li>Dalam bahasa C, untuk mencetak "Hello, World" kita menulis:
+                    <pre>
+                        #include <stdio.h>
+                            int main() {
+                                printf("Hello, World");
+                                return 0;
+                            }
+                    </pre>
+                </li>
+                <li>Dalam bahasa Java:
+                    <pre>
+                        class Main {
+                            public static void main(String[] args) {
+                                System.out.println("Hello, World");
+                            }
+                        }                        
+                    </pre>
+                </li>
+                <li>Dalam PHP:
+                    <pre>
+                        echo "Hello, World";
+                    </pre>
+                </li>
+            </ul>
+
+            <h2>Statement dan Expression</h2>
+            <p>Dalam coding, kita juga harus memahami perbedaan antara statement dan expression.</p>
+            <ul>
+                <li><strong>Statement:</strong> Unit sintaks yang menyatakan aksi, seperti mendeklarasikan variable.</li>
+                <li><strong>Expression:</strong> Entitas yang menghasilkan nilai, seperti operasi matematika.
+                    <ul>
+                        <li><p>Contoh statement Javascript</p>
+                        <p>var x = 1; // Ini adalah statement</p></li>
+                        <li><p>Contoh expression Javascript</p>
+                        <p>x + 1; // Ini adalah expression yang menghasilkan nilai baru</p>
+                        </li>
+                    </ul>    
+                </li>
+            </ul>
+            <p>Penting untuk memahami bahwa sebuah statement dapat berisi expression. Misalnya, var x = 4 + 2; adalah statement yang juga mengandung expression 4 + 2.</p>
+            <p>Dengan memahami konsep dasar seperti sintaks, semantik, statement, dan expression, kalian bisa mulai belajar coding dengan lebih baik.</p>
+        </div>
+
+        <div class="button">
+            <div class="button-konfirmasi">
+                <button id="belajarLagiButton">Belajar Lagi</button>
+<button id="mengertiButton">Mengerti</button>
+            </div>
+            <div class="button-soal">
+                <a href="../dasar-pemrograman/soal-3.html">Coba Latihan Soal</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Main content ends -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer-section">
+        <div class="footer-logo">
+          <h1>ruangIlmu</h1>
+        </div>
+
+        <div class="footer-sumber">
+          <h3>Sumber</h3>
+          <div class="sumber-materi">
+            <div class="sumber">
+              <ul>
+                <li><a href="#">Pengetahuan Indonesia</a></li>
+                <li><a href="#">Dasar Pemrograman</a></li>
+              </ul>
+            </div>
+            <div class="sumber">
+              <ul>
+                <li><a href="#">Bahasa Inggris</a></li>
+                <li><a href="#">Artikel</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2024 ruangIlmu. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- footer ends -->
+    <script src="../../script.js"></script>
+  </body>
+</html>

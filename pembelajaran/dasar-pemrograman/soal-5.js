@@ -1,49 +1,50 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Siapakah yang dijuluki sebagai Bapak Komputer?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Howard Aiken", correct: false},
+            {text: "Charles Babbage", correct: true},
+            {text: "Alan Turing", correct: false},
+            {text: "John Atanasoff", correct: false}
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Komputer pertama yang dapat digunakan untuk tujuan umum adalah?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "UNIVAC", correct: false},
+            {text: "Colossus", correct: false},
+            {text: "ENIAC", correct: true},
+            {text: "IBM 700", correct: false}
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Generasi kedua komputer ditandai dengan?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Penggunaan tabung vakum", correct: false},
+            {text: "Penggunaan mikroprosessor", correct: false},
+            {text: "Penggunaan sirkuit terpadu", correct: false},
+            {text: "Penggunaan transistor", correct: true}
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Komputer mini yang memengaruhi generasi berikutnya muncul pada?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Generasi pertama", correct: false},
+            {text: "Generasi kedua", correct: false},
+            {text: "Generasi ketiga", correct: true},
+            {text: "Generasi keempat", correct: false}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Pada generasi kelima, teknologi komputer berkembang ke arah?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Penggunaan tabung vakum", correct: false},
+            {text: "Teknologi layar sentuh dan miniaturisasi", correct: true},
+            {text: "Penggunaan transistor", correct: false},
+            {text: "Penggunaan mikroprosesor", correct: false}
         ]
     }
+       
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +130,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

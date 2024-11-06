@@ -1,47 +1,47 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa itu algoritma dalam pemrograman?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Struktur data", correct: false},
+            {text: "Urutan untuk pemecahan masalah", correct: true},
+            {text: "Bahasa pemrograman", correct: false},
+            {text: "Perangkat keras", correct: false}
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Algoritma untuk mencari data disebut?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Searching", correct: true},
+            {text: "Sorting", correct: false},
+            {text: "Iterasi", correct: false},
+            {text: "Rekursi", correct: false}
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Pencarian data secara berurutan adalah?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Binary Search", correct: false},
+            {text: "Sequential Search", correct: true},
+            {text: "Quick Sort", correct: false},
+            {text: "Bubble Sort", correct: false}
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Algoritma pengurutan yang membandingkan data ke-n dengan data ke-(n+1) adalah?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Quick Sort", correct: false},
+            {text: "Selection Sort", correct: false},
+            {text: "Bubble Sort", correct: true},
+            {text: "Insertion Sort", correct: false}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Notasi untuk mengukur kompleksitas algoritma adalah?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Time Analysis", correct: false},
+            {text: "Space Complexity", correct: false},
+            {text: "Time Complexity Analysis", correct: false},
+            {text: "Big O Notation", correct: true}
         ]
     }
 ];
@@ -129,6 +129,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

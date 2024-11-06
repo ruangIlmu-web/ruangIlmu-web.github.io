@@ -1,49 +1,50 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa yang dimaksud dengan rumah adat?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Rumah yang dibangun untuk modernisasi", correct: false},
+            {text: "Rumah yang mencerminkan budaya dan tradisi masyarakat", correct: true},
+            {text: "Rumah yang tidak terpakai", correct: false},
+            {text: "Rumah yang dibangun dengan bahan sederhana", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Pakaian adat biasanya digunakan untuk?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Menyampaikan pesan politik", correct: false},
+            {text: "Mengekspresikan identitas dan status sosial", correct: true},
+            {text: "Sebagai alat pertunjukan", correct: false},
+            {text: "Menarik perhatian media", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Tari adat biasanya ditujukan untuk?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Menyambut tamu agung dan perayaan", correct: true},
+            {text: "Memperlihatkan kebudayaan asing", correct: false},
+            {text: "Menghibur diri sendiri", correct: false},
+            {text: "Pertunjukan di luar negeri", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Alat musik tradisional dapat menggambarkan?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Kekayaan sebuah negara", correct: false},
+            {text: "Keunikan budaya daerah tertentu", correct: true},
+            {text: "Kemandekan budaya", correct: false},
+            {text: "Budaya populer", correct: false},
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Senjata tradisional sering digunakan untuk?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Mempertahankan diri dan berburu", correct: true},
+            {text: "Menyerang negara lain", correct: false},
+            {text: "Pertunjukan seni", correct: false},
+            {text: "Menghibur anak-anak", correct: false},
         ]
     }
+    
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +130,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

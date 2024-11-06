@@ -1,49 +1,50 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa langkah pertama sebelum memilih bahasa pemrograman?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Memilih yang paling populer", correct: false},
+            {text: "Memahami tujuan dan minat kita", correct: true},
+            {text: "Memilih yang paling mudah", correct: false},
+            {text: "Mengikuti saran teman", correct: false}
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Karakteristik bahasa pemrograman tingkat rendah adalah?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Mudah dipahami manusia", correct: false},
+            {text: "Lebih lambat bagi komputer", correct: false},
+            {text: "Sulit dipahami manusia", correct: true},
+            {text: "Hanya bisa berjalan di satu mesin", correct: false}
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Mengapa penting fokus pada satu bahasa pemrograman?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Agar cepat menguasai semua bahasa", correct: false},
+            {text: "Karena bisa menerapkannya ke bahasa lain", correct: true},
+            {text: "Agar dapat gaji tinggi", correct: false},
+            {text: "Untuk mengikuti tren", correct: false}
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Bahasa pemrograman tingkat tinggi lebih?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Mudah dimengerti komputer", correct: false},
+            {text: "Sulit dipahami manusia", correct: false},
+            {text: "Cepat dieksekusi komputer", correct: false},
+            {text: "Mudah dipahami manusia", correct: true}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Untuk pemula, penting memilih bahasa yang?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Paling populer di media sosial", correct: false},
+            {text: "Memiliki permintaan tinggi di pasar kerja", correct: true},
+            {text: "Digunakan oleh semua orang", correct: false},
+            {text: "Paling sering digunakan di proyek open-source", correct: false}
         ]
     }
+            
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +130,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

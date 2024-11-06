@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to ruangIlmu</title>
+
+    <link rel="stylesheet" href="./materi-dasar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header section starts -->
+    <header>
+      <a href="#" class="logo">ruangIlmu</a>
+
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html">About</a>
+        <a href="../pembelajaran.html">Learning</a>
+        <a href="#article">Article</a>
+      </nav>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- Header section ends-->
+
+    <!-- main content starts -->
+    <main>
+        <div class="topik-materi">
+            <h1>Struktur Data dalam Pemrograman</h1>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q04buHDFT6M?si=AWeFgbqdUylXjO0N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+    
+            <div class="isi-materi">
+                <p>Struktur data merupakan elemen penting yang wajib dipahami oleh para programmer. Struktur data memudahkan akses pengguna terhadap data yang dibutuhkan secara tepat, karena format khusus yang dimilikinya berfungsi untuk mengatur, memproses, mengambil, dan menyimpan data. Dalam video ini, akan dibahas secara singkat tentang pengertian struktur data, cara kerjanya, dan cara pembuatannya.</p>
+    
+                <p>Struktur data didefinisikan sebagai metode untuk menyimpan dan mengatur data secara terstruktur dalam sistem komputer atau basis data, sehingga data dapat diakses dengan lebih mudah. Data dapat disimpan dalam bentuk angka, huruf, simbol, dan lainnya, yang ditempatkan dalam kolom atau susunan tertentu. Beberapa istilah penting yang perlu dipahami dalam konteks struktur data meliputi node dan indeks. Node merupakan elemen yang terdapat dalam struktur data, di mana setiap node berisi pointer ke node selanjutnya, sedangkan indeks adalah objek dalam sistem struktur data yang mempercepat proses pencarian data. Struktur data juga digunakan untuk mengelola basis data, melakukan kompresi file, dan mengolah data lainnya. Oleh karena itu, pemahaman terhadap struktur data menjadi hal yang penting untuk menyatukan beberapa elemen data secara efektif, terutama karena struktur data juga mempengaruhi ketepatan algoritma dalam suatu program.</p>
+    
+                <p>Selanjutnya, berbagai jenis struktur data yang dapat digunakan untuk menyimpan data di komputer akan dijelaskan. Pertama, terdapat struktur data yang disebut array, yang memiliki kumpulan elemen dengan jarak yang saling berdekatan. Array memungkinkan pencarian data secara acak hanya dengan menggunakan indeks, serta memungkinkan penyimpanan beberapa data dengan jenis yang sama dalam satu nama. Struktur data array memiliki beberapa keunggulan, antara lain sebagai implementasi dari tipe struktur data lain, seperti Queue dan Stack, serta proses pencarian data yang relatif cepat. Namun, ada juga kekurangan, seperti waktu yang lebih lama untuk menambah dan menghapus data karena data disimpan secara berurutan.</p>
+    
+                <p>Selanjutnya, terdapat linked list, yang merupakan struktur data yang terdiri dari urutan data linear yang saling terhubung. Dalam penggunaan linked list, akses data dilakukan secara manual, sehingga tidak dapat dilakukan pencarian data secara acak. Linked list dapat dibagi menjadi tiga jenis: singly linked list, doubly linked list, dan circular linked list, yang berbeda dalam proses traversalnya. Keunggulan linked list meliputi ukuran yang dinamis dan alokasi memori yang dapat disesuaikan dengan kebutuhan, serta penambahan dan pengurangan data yang lebih cepat. Namun, kekurangan linked list mencakup konsumsi memori yang lebih tinggi dan proses traversal yang lebih panjang.</p>
+    
+                <p>Tipe struktur data berikutnya adalah stack, yang mengikuti urutan tertentu yang dikenal sebagai LIFO (Last In First Out) atau FILO (First In Last Out). Dalam stack, data yang terakhir masuk akan menjadi data yang pertama kali keluar. Kelebihan stack termasuk pengelolaan data yang efisien dan kemampuan untuk membersihkan objek secara otomatis. Namun, stack juga memiliki keterbatasan dalam kapasitas memori dan kemungkinan terjadinya overflow saat jumlah objek terlalu banyak.</p>
+    
+                <p>Tipe data selanjutnya adalah queue, yang merupakan struktur data linear dengan urutan FIFO (First In First Out), di mana data yang pertama kali masuk adalah yang pertama kali diambil. Keunggulan queue mencakup proses pelayanan data yang cepat dan optimal, serta kemampuan untuk menangani beberapa tipe data sekaligus. Di sisi lain, kekurangan queue meliputi ketidakmampuan untuk melayani data terakhir yang masuk jika waktu pelayanan habis, serta proses yang rumit saat menambah atau menghapus elemen di tengah.</p>
+    
+                <p>Selanjutnya, terdapat struktur data tree, yang memiliki bentuk mirip pohon dan efisien untuk menyimpan data secara hierarki. Tree disusun dalam berbagai level dan dianggap sebagai kumpulan node yang saling terhubung. Istilah penting dalam tree mencakup root node, child, parent, siblings, dan leaf node. Kelebihan tree adalah proses pencarian data yang cepat, sementara kekurangannya adalah waktu yang lebih lama untuk memasukkan data.</p>
+    
+                <p>Tipe struktur data keenam adalah graph, yang terdiri dari beberapa node yang saling terhubung, di mana setiap garis menghubungkan dua simpul. Graph digunakan untuk menunjukkan jaringan tertentu dan memiliki keunggulan dalam memeriksa hubungan antar node dengan cepat, namun memerlukan waktu yang lama untuk memodifikasi data.</p>
+    
+                <p>Terakhir, terdapat hash table, yang digunakan untuk menyimpan data secara asosiatif dalam format array. Keunggulan hash table mencakup akses data yang cepat dan efektivitas dalam pencarian data. Namun, terdapat juga kemungkinan terjadinya konflik data yang dapat mengurangi efisiensi.</p>
+    
+                <p>Demikian penjelasan singkat mengenai struktur data dalam pemrograman.</p>
+            </div>
+    
+            <div class="button">
+                <div class="button-konfirmasi">
+                    <button id="belajarLagiButton">Belajar Lagi</button>
+<button id="mengertiButton">Mengerti</button>
+                </div>
+                <div class="button-soal">
+                    <a href="../dasar-pemrograman/soal-8.html">Coba Latihan Soal</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    
+    
+
+    <!-- Main content ends -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer-section">
+        <div class="footer-logo">
+          <h1>ruangIlmu</h1>
+        </div>
+
+        <div class="footer-sumber">
+          <h3>Sumber</h3>
+          <div class="sumber-materi">
+            <div class="sumber">
+              <ul>
+                <li><a href="#">Pengetahuan Indonesia</a></li>
+                <li><a href="#">Dasar Pemrograman</a></li>
+              </ul>
+            </div>
+            <div class="sumber">
+              <ul>
+                <li><a href="#">Bahasa Inggris</a></li>
+                <li><a href="#">Artikel</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2024 ruangIlmu. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- footer ends -->
+    <script src="../../script.js"></script>
+  </body>
+</html>

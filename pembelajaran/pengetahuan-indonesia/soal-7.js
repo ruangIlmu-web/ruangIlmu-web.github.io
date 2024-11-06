@@ -1,49 +1,50 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Mengapa Indonesia dikenal sebagai 'the lost world of Asia'?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Karena banyak hewan eksotis dan langka", correct: true},
+            {text: "Karena semua hewan telah punah", correct: false},
+            {text: "Karena tidak ada spesies unik di sana", correct: false},
+            {text: "Karena hanya terdapat satu suku bangsa", correct: false},
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Berapa populasi elang Flores yang tersisa saat ini?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "500 ekor", correct: false},
+            {text: "250 ekor", correct: true},
+            {text: "100 ekor", correct: false},
+            {text: "1000 ekor", correct: false},
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Di mana burung Bidadari Halmahera dapat ditemukan?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Hanya di Pulau Sumatera", correct: false},
+            {text: "Di Pulau Halmahera dan Bacan", correct: true},
+            {text: "Di seluruh Indonesia", correct: false},
+            {text: "Di Pulau Jawa", correct: false},
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Apa yang menjadi ciri khas dari Cendrawasih botak?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Bulu berwarna hitam", correct: false},
+            {text: "Hiasan unik pada ekor", correct: true},
+            {text: "Leher panjang", correct: false},
+            {text: "Mampu terbang tinggi", correct: false}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "5.	Kura-kura leher ular Rote memiliki ciri khas?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: ". Leher panjang yang tidak bisa ditarik", correct: true},
+            {text: "Warna bulu yang cerah", correct: false},
+            {text: "Habitat di lautan", correct: false},
+            {text: "Makanan vegetarian", correct: false}
         ]
     }
+    
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +130,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-

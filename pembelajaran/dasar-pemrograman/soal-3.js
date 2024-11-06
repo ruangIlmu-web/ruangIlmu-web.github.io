@@ -1,49 +1,49 @@
 const question = [
     {
-        question: "Apa itu pemrograman?",
+        question: "Apa tujuan dari coding?",
         answer: [
-            {text: "Memasukkan data ke komputer", correct: false},
-            {text: "Membuat program dengan kode", correct: true},
-            {text: "Menginstal aplikasi", correct: false},
-            {text: "Memperbaiki perangkat keras", correct: false},
+            {text: "Mengatur jaringan komputer", correct: false},
+            {text: "Berkomunikasi dengan komputer agar menjalankan perintah", correct: true},
+            {text: "Mengatur tampilan layar komputer", correct: false},
+            {text: "Mengatur sinyal internet", correct: false}
         ]
     },
     {
-        question: "Bahasa pemrograman yang memakai bilangan biner disebut?",
+        question: "Bahasa yang perlu diterjemahkan oleh compiler sebelum dijalankan disebut?",
         answer: [
-            {text: "Assembly", correct: false},
-            {text: "Mesin", correct: true},
-            {text: "Tingkat Tinggi", correct: false},
-            {text: "Sehari-hari", correct: false},
+            {text: "Interpreted Language", correct: false},
+            {text: "Just-In-Time (JIT)", correct: false},
+            {text: "Compiled Language", correct: true},
+            {text: "Assembly Language", correct: false}
         ]
     },
     {
-        question: "Bahasa tingkat tinggi berbeda karena?",
+        question: "Apa perbedaan antara sintaks dan semantik?",
         answer: [
-            {text: "Menggunakan singkatan", correct: false},
-            {text: "Dipahami tanpa kompilasi", correct: false},
-            {text: "Mudah dipahami manusia", correct: true},
-            {text: "Tidak perlu kode", correct: false},
+            {text: "Sintaks adalah makna kode, semantik adalah aturan penulisan", correct: false},
+            {text: "Sintaks adalah aturan penulisan, semantik adalah makna kode", correct: true},
+            {text: "Sintaks adalah jenis bahasa pemrograman, semantik adalah tipe variabel", correct: false},
+            {text: "Sintaks adalah compiler, semantik adalah interpreter", correct: false}
         ]
     },
     {
-        question: "Python sering digunakan untuk?",
+        question: "Dalam coding, pernyataan yang menyatakan aksi disebut?",
         answer: [
-            {text: "Desain grafis", correct: false},
-            {text: "Game dan animasi", correct: false},
-            {text: "Web, bisnis, dan AI", correct: true},
-            {text: "Perangkat keras", correct: false},
+            {text: "Expression", correct: false},
+            {text: "Syntax", correct: false},
+            {text: "Semantik", correct: false},
+            {text: "Statement", correct: true}
         ]
     },
     {
-        question: "Programmer tak perlu belajar semua bahasa karena?",
+        question: "Contoh bahasa dengan proses Just-In-Time (JIT) adalah?",
         answer: [
-            {text: "Mudah dipelajari", correct: false},
-            {text: "Fungsi tiap bahasa berbeda", correct: true},
-            {text: "Semua bahasa sama", correct: false},
-            {text: "Hanya untuk satu bidang", correct: false},
+            {text: "Java", correct: true},
+            {text: "C++", correct: false},
+            {text: "Python", correct: false},
+            {text: "PHP", correct: false}
         ]
-    }
+    }        
 ];
 
 const questionElement = document.getElementById("question");
@@ -129,6 +129,3 @@ restartButton.addEventListener("click", startQuiz);
 
 // Mulai kuis pertama kali
 startQuiz();
-
-
-
