@@ -420,14 +420,22 @@ footer{
 
     /* materi */
     .topik-materi {
-        max-width: 88%;
+        max-width: 100%;
         margin-bottom: 0;
         padding: 3rem;
     }
     
     .topik-materi .video iframe {
-        width: 360px;
-        height: 200px;
+        width: 430px;
+        height: 205px;
+    }
+
+    .topik-materi h1 {
+        font-size: 2.8rem;
+    }
+
+    .topik-materi .isi-materi p{
+        font-size: 2.2rem;
     }
     
     .button{
