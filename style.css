@@ -25,8 +25,6 @@ html {
     font-size: 62.5%; /* 16px * 62.5% = 10px */
     overflow-x: hidden;
     overflow-y: hidden;
-    scroll-padding: 6.5rem;
-	scroll-behavior: smooth;
 }
 
 body {
