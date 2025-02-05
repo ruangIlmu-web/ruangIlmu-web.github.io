@@ -23,8 +23,8 @@
 
 html {
     font-size: 62.5%; /* 16px * 62.5% = 10px */
-    overflow-x: hidden;
-    overflow-y: hidden;
+    scroll-padding: 4rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -80,91 +80,27 @@ header .navbar a:hover {
     display: none;
 }
 
-.image {
+/* main starts */
+
+.maintenance {
     display: flex;
-}
-.image img{
-    width: 35%;
-    z-index: -9999;
-}
-
-.image img:nth-child(2){
-margin-left: auto;
-transform: scaleX(-1);
-
-}
-
-/* artikel starts */
-.fitur-artikel{
-    margin: -30rem 7rem 20rem 7rem;
-}
-
-.fitur-artikel h1 {
-    color: black;
-    text-align: center;
-    font-size: 5rem;
-}
-
-.fitur-artikel .semua-artikel{
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 2rem;
-    margin: 4rem 0;
-}
-
-.fitur-artikel .semua-artikel .artikel {
-    border: 2px solid var(--purple);
-    box-shadow: 0px 4px 77px 17px rgba(108, 82, 207, 0.19);
-    height: max-content;
-    width: 60rem;
-    display: flex;
-    flex-grow: 1;
-    border-radius: 2rem;
-    padding: 2rem;
-} 
-
-.artikel img {
-    display: flex;
-    margin: auto;
-    width: 250px;
-    border: 1px solid var(--purple);
-    border-radius: 18px;
-}
-
-.artikel .artikel-text h1 {
-    font-size: 2.4rem;
-    text-align: left;
-    max-width: 30rem;
-    margin: 0.7rem 2rem 0rem;
-    color: var(--purple);
-    color: black;
-    font-weight: 700;
-}
-
-.artikel a {
-    font-size: 2rem; 
-    background-color: var(--purple); 
-    color: white; 
-    font-weight: 500; 
-    margin: 1rem 7rem;
-    padding: 10px 8px; 
-    border-radius: 42px; 
-    width: 18rem;
-    cursor: pointer; 
-    text-align: center;
-    outline: none;
-    display: flex;
-    justify-content: center;
+    margin: 8rem auto;
+    max-width: 950px;
     align-items: center;
 }
 
-.artikel a:hover{
-    background-color: transparent;
-    color: var(--purple);
-    border: 1px solid var(--midnight);
-    transition: 0.9s;
+.maintenance img{
+    width: 400px;
+    margin: auto;
 }
-/* artikel ends */
+
+.maintenance h1{
+    color: var(--purple);
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+/* main ends */
 
 /* footer starts*/
 footer{
@@ -194,163 +130,42 @@ footer{
     text-align: center;
 }
 
-.footer-sumber .sumber-artikel{
+.footer-sumber .sumber-materi{
     font-size: 2rem;
     display: flex;
     gap: 4rem;
 }
 
-.sumber-artikel ul{
+.sumber-materi ul{
     list-style-type: none;
     line-height: 4rem;
 }
 
-.sumber-artikel ul li a{
+.sumber-materi ul li a{
     color: white;
 }
 
 .copyright {
     text-align: center;
-    color: white;
     font-size: 1.7rem;
     padding-top: 0.7rem;
+    color: white;
 }
 /* footer ends*/
 
 /* breakpoint */
-@media screen and (max-width: 1280px) {
-    .artikel-text{
-        margin-top: -2.5rem;
-    }
-    .artikel .artikel-text a {
-        font-size: 2rem; 
-    }
-
-    .fitur-artikel .semua-artikel{
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        gap: 2rem;
-    }
-    
-    .fitur-artikel .semua-artikel .artikel {
-        height: max-content;
-        width: 55rem;
-    } 
-
-    .artikel img {
-        width: 200px;
-    }
-    
-    .artikel .artikel-text h1 {
-        font-size: 2.2rem;
-        max-width: 27rem;
-        margin: 1rem 2rem 0rem;
-    }
-}
-@media screen and (max-width: 1194px){
-    .artikel-text{
-        margin-top: 3rem;
-    }
-    .artikel .artikel-text a {
-        font-size: 2rem; 
-        width: 14rem;
-        display: flex;
-        margin-left: 6rem;
-    }
-
-    .fitur-artikel .semua-artikel{
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        gap: 2rem;
-    }
-    
-    .fitur-artikel .semua-artikel .artikel {
-        height: 18rem;
-        width: 51.2rem;
-        margin-top: 2rem;
-    } 
-
-    .artikel img {
-        width: 200px;
-    }
-    
-    .artikel .artikel-text h1 {
-        font-size: 2.2rem;
-        max-width: 26rem;
-        margin: -3rem 1rem 0rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .artikel-text{
-        margin-top: 2.5rem;
-    }
-    .artikel .artikel-text a {
-        font-size: 2rem; 
-    }
-
-    .fitur-artikel .semua-artikel{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    .fitur-artikel .semua-artikel .artikel {
-        height: max-content;
-        width: 66rem;
-    } 
-
-    .artikel img {
-        width: 200px;
-    }
-    
-    .artikel .artikel-text h1 {
-        font-size: 2.2rem;
-        max-width: 50rem;
-        margin: 3rem 2rem 0rem;
-    }
-}
-
 @media screen and (max-width: 834px) {
-    .fitur-artikel{
-        margin: -20rem 0 -40rem  0;
-    }
-    
-    .fitur-artikel h1 {
-        color: black;
-        text-align: center;
-        font-size: 5rem;
-    }
-    
-    .fitur-artikel .semua-artikel{
-        display: flex;
+    .maintenance {
+        margin: 1rem auto;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        margin: 4rem 0;
     }
     
-    .fitur-artikel .semua-artikel .artikel {
-        width: 60rem;
-    } 
-    
-    .artikel img {
-        display: flex;
-        align-items: center;
-        width: 250px;
-        border: 1px solid var(--purple);
-        border-radius: 18px;
+    .maintenance img{
+        width: 400px;
     }
     
-    .artikel .artikel-text h1 {
-        font-size: 2.4rem;
-        text-align: left;
-        max-width: 30rem;
-        margin-top: -2rem;
-        margin-left: 1.5rem;
+    .maintenance h1{
+        max-width: 400px;
     }
 
     footer{
@@ -378,18 +193,18 @@ footer{
         text-align: center;
     }
     
-    .footer-sumber .sumber-artikel{
+    .footer-sumber .sumber-materi{
         font-size: 1.9rem;
         display: flex;
         gap: 2rem;
     }
     
-    .sumber-artikel ul{
+    .sumber-materi ul{
         list-style-type: none;
         line-height: 3rem;
     }
     
-    .sumber-artikel ul li a{
+    .sumber-materi ul li a{
         color: white;
     }
     
@@ -401,35 +216,66 @@ footer{
 
 
 @media screen and (max-width: 768px) {
-    .artikel-text{
-        margin-top: -2.5rem;
-    }
-    .artikel .artikel-text a {
-        font-size: 2rem; 
-        margin-left: 12rem;
+    header{
+        padding: 2rem 5%;
     }
 
-    .fitur-artikel .semua-artikel{
-        display: flex;
+    .maintenance {
+        margin: 1rem auto;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
     }
     
-    .fitur-artikel .semua-artikel .artikel {
-        height: max-content;
-        width: 66rem;
-    } 
+    .maintenance img{
+        width: 400px;
+    }
+    
+    .maintenance h1{
+        max-width: 400px;
+    }
 
-    .artikel img {
-        width: 200px;
+    footer{
+        height: 269px;
+        background-color: var(--purple);
+        bottom: 0;
+        margin-top: 10rem;
     }
     
-    .artikel .artikel-text h1 {
-        font-size: 2.4rem;
-        max-width: 50rem;
-        margin: 2.7rem 2rem 0rem;
+    .footer-section{
+        padding: 3rem 7% 7rem 7%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    
+    .footer-logo{
+        font-size: 1.7rem;
+        padding-top: 1.6rem;
+    }
+
+    
+     .footer-sumber h3{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    
+    .footer-sumber .sumber-materi{
+        font-size: 1.9rem;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .sumber-materi ul{
+        list-style-type: none;
+        line-height: 3rem;
+    }
+    
+    .sumber-materi ul li a{
+        color: white;
+    }
+    
+    .copyright p{
+        text-align: center;
+        font-size: 1.6rem;
     }
 }
 
@@ -537,55 +383,25 @@ footer{
         width: 28px;
     }
 
-    /* fitur */
-    .artikel-text{
-        margin-top: -2.5rem;
-    }
-
-    .fitur-artikel .semua-artikel{
-        display: flex;
+    .maintenance {
+        margin: 6rem auto 0;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
     }
     
-    .fitur-artikel .semua-artikel .artikel {
-        height: max-content;
-        width: 36rem;
-        display: flex;
-        flex-direction: column;
-    } 
-
-    .fitur-artikel h1 {
-        font-size: 4rem;
-        margin-top: 15rem;
-        margin-bottom: -2rem;
-    }
-
-    .artikel img {
-        width: 300px;
+    .maintenance img{
+        width: 250px;
     }
     
-    .artikel .artikel-text h1 {
-        font-size: 2.8rem;
-        max-width: 50rem;
-        line-height: 3.3rem;
-        margin: 3rem 2rem 0rem;
+    .maintenance h1{
+        max-width: 300px;
+        font-size: 3rem;
     }
 
-    .artikel .artikel-text a{
-        font-size: 2.5rem;
-        width: 20rem;
-        margin-left: 6rem;
-    }
-    
-    /* fitur ends */
     footer{
         height: 269px;
         background-color: var(--purple);
         bottom: 0;
-        margin-top: 60rem;
+        margin-top: 10rem;
     }
     
     .footer-section{
@@ -607,18 +423,18 @@ footer{
         text-align: left;
     }
     
-    .footer-sumber .sumber-artikel{
+    .footer-sumber .sumber-materi{
         font-size: 1.9rem;
         display: flex;
         gap: 2rem;
     }
     
-    .sumber-artikel ul{
+    .sumber-materi ul{
         list-style-type: none;
         line-height: 3rem;
     }
     
-    .sumber-artikel ul li a{
+    .sumber-materi ul li a{
         color: white;
     }
     
