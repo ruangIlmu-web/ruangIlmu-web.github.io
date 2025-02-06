@@ -30,7 +30,9 @@ html {
 body {
     background-color: var(--cream);
     overflow-x: hidden;
-    height: max-content;
+    overflow-y: hidden;
+    height: 100vh;
+    bottom: 0;
 }
 
 
